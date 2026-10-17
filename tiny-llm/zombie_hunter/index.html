@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111719">
+    <meta name="description" content="Zombie Hunter: Last Light — a free browser survival shooter.">
+    <title>Zombie Hunter: Last Light</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <a class="brand" href="./" aria-label="Zombie Hunter home">
+          <span class="brand-mark" aria-hidden="true">ZH</span>
+          <span>ZOMBIE <b>HUNTER</b></span>
+        </a>
+        <span class="edition">LAST LIGHT <i></i> SURVIVAL PROTOCOL</span>
+      </header>
+
+      <section class="game-frame" aria-label="Zombie Hunter game">
+        <canvas id="game" width="960" height="640" tabindex="0" aria-label="Game canvas. Click Start Game to begin.">
+          Your browser does not support HTML Canvas. Please use a modern browser.
+        </canvas>
+      </section>
+
+      <footer class="footer">
+        <span>WASD / ARROWS <i>MOVE</i></span>
+        <span>MOUSE <i>AIM</i></span>
+        <span>LEFT CLICK <i>FIRE</i></span>
+        <span>R <i>RELOAD</i></span>
+        <span>ESC <i>PAUSE</i></span>
+      </footer>
+      <p class="note">A self-contained browser game. No downloads, accounts, or external assets required.</p>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

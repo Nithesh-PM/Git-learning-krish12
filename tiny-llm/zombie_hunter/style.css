@@ -1,0 +1,156 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #111719;
+  color: #e8e9dc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 48%, rgb(63 71 59 / 19%), transparent 58%),
+    #111719;
+}
+
+.shell {
+  width: min(100% - 36px, 1060px);
+  margin: 0 auto;
+  padding: 24px 0 18px;
+}
+
+.masthead,
+.brand,
+.edition,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.masthead {
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.brand {
+  gap: 11px;
+  color: #e8e9dc;
+  font-family: Impact, "Arial Narrow", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+}
+
+.brand b {
+  color: #d85b4c;
+}
+
+.brand-mark {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid #d85b4c;
+  color: #e9866c;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  letter-spacing: -0.08em;
+}
+
+.edition,
+.footer {
+  gap: 10px;
+  color: #8e9992;
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.edition i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #d85b4c;
+  box-shadow: 0 0 10px #d85b4c;
+}
+
+.game-frame {
+  overflow: hidden;
+  border: 1px solid #48524b;
+  background: #13191d;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 36%), 0 0 0 5px rgb(255 255 255 / 2%);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  outline: none;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.footer {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 28px;
+  padding: 18px 8px 12px;
+  color: #e1e3d5;
+}
+
+.footer i {
+  margin-left: 5px;
+  color: #818d85;
+  font-style: normal;
+}
+
+.note {
+  margin: 0;
+  color: #68736e;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 580px) {
+  .shell {
+    width: min(100% - 20px, 1060px);
+    padding-top: 14px;
+  }
+
+  .masthead {
+    margin-bottom: 11px;
+  }
+
+  .brand {
+    gap: 7px;
+    font-size: 17px;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .edition {
+    font-size: 8px;
+    letter-spacing: 0.06em;
+  }
+
+  .footer {
+    gap: 9px 14px;
+    font-size: 9px;
+  }
+
+  .note {
+    font-size: 10px;
+  }
+}
